@@ -13,6 +13,14 @@ let inputValue = 'hello world';
 
 let countitArray = [];
 
+let returnValues = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i][0] !== '') {
+      console.log(arr[i][0], arr[i][1]);
+    }
+  }
+}
+
 let countit = function(array) {
   array = inputValue.split('');
   let count = 0;
@@ -32,3 +40,4 @@ let countit = function(array) {
 }
 
 countit(inputValue);
+returnValues(countitArray);
