@@ -13,20 +13,22 @@ function countFunc() {
 
 
 let returnValues = (arr) => {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i][0] !== '') {
-      return (arr[i][0] + ": " + arr[i][1]);
+    let returnString = '';
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i][0] !== '') {
+        returnString += (arr[i][0] + ":" + arr[i][1]) + " ";
+        }
     }
-  }
+    return returnString;
 }
 
 let countit = function(array) {
-  array = inputValue.split('');
+  let arrayValue = array.split('');
   let count = 0;
   let key = '';
   alphabet.forEach(function(val, idx, arr) {
-    for (let i = 0; i < array.length; i++) {
-      if (val === array[i]) {
+    for (let i = 0; i < arrayValue.length; i++) {
+      if (val === arrayValue[i]) {
         count += 1;
         key = val;
       }
