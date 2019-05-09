@@ -1,22 +1,21 @@
 'use strict';
 
+let inputValue = "";
+const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+let countitArray = [];
+
 function countFunc() { 
-    let input = document.getElementById("input").value;
-    console.log(input);
-    let output = input
-    document.getElementById("output").innerHTML = output;
+    let inputValue = document.getElementById("input").value;
+    countit(inputValue);
+    document.querySelector("#output").innerHTML = returnValues(countitArray);
 }
 
-const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-let inputValue = 'hello world';
-
-let countitArray = [];
 
 let returnValues = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i][0] !== '') {
-      console.log(arr[i][0], arr[i][1]);
+      return (arr[i][0] + ": " + arr[i][1]);
     }
   }
 }
@@ -38,6 +37,3 @@ let countit = function(array) {
   });
   return countitArray;
 }
-
-countit(inputValue);
-returnValues(countitArray);
