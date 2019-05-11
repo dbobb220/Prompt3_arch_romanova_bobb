@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,18 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="countit.css">
 </head>
+
 <body>
-    <input type="text" id="input"></div>
+    <p class="rules">
+        <h1>Letter Counter</h1>
+        <h2>Enter any text in the box and press the button to count how many of each letter is in your entry.</h1>
+    </p>
+    <p id="userInput">
+        <textarea id="input" rows="4" cols="50"></textarea>
+    </p>
     <button onclick="countFunc()">COUNT</button>
     <p id="output"></p>
     <script src="countit.js"></script>
 </body>
+
 </html>
-
-
-
