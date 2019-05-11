@@ -21,7 +21,8 @@ let returnValues = (arr) => {
   // loop through results from countit to remove empty values
   for (let i = 0; i < arr.length; i++) {
       if (arr[i][0] !== '') {
-      returnString += (arr[i][0] + ":" + arr[i][1]) + " ";
+      returnString += 'The letter ' + '<b>' + (arr[i][0] 
+        + '</b>' + " is present " + '<b>' + arr[i][1]) + '</b>' + " times. <br>";
       }
   }
   return returnString;
