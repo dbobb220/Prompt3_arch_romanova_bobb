@@ -49,7 +49,6 @@ let countit = function(array) {
     count = 0;
     key = '';
   });
-  // return final array that has empty values 
-  // if letter isn't present and a key and count if letter is present
+  // return final array that has empty values if letter isn't present and a key and count if letter is present
   return countitArray;
 }
