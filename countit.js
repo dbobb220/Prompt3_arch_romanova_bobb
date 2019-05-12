@@ -11,7 +11,7 @@ function countFunc() {
   returnString = '';
   countitArray = [];
   // variable for input text
-  let inputValue = document.getElementById("input").value;
+  let inputValue = document.getElementById("input").value.toLowerCase();
   // sending input through functions and adding it to DOM
   countit(inputValue);
   document.querySelector("#output").innerHTML = returnValues(countitArray);
